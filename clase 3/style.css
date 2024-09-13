@@ -1,0 +1,61 @@
+/* Los comentarios se escriben asi */
+/* Selectores  -> hace referencia a elementos del html */
+
+/* sintaxis */
+
+/*  selector {
+        propiedades:valor;
+        propiedades:valor;
+}
+
+tipos de selectores:
+ -su etiqueta
+ -class
+ -id
+ 
+ */
+ /* rgba -> colores primarios y la 'a' es de transparencia, valores del 0 al 1*/
+ /* por etiquetas */
+
+ /* unidades de medida para width y height
+
+porcentajes ( % ) -> toma como 100% el tamaño de su elemento padre 
+Pixeles ( px ) -> es una unidad fija
+vm / vw -> habla del ancho y el alto de la ventana/pantalla
+ 
+ */
+ body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blueviolet;
+ }
+ h1{
+    color: white;
+    background-color: black;
+    width:50%;
+ }
+ p{
+    color: white;
+    background-color: blue;
+    width: 50%;
+ }
+ img{
+    width: 400px;
+ }
+ div{
+    background-color: red;
+    width: 600px;
+ }
+#parrafo2{
+    width: 50vw; 
+}
+
+ /* Por Clase -> simbolo . */
+
+ .titular{
+    color: green;
+ }
+
+ /*por id -> simbolo #nombreID */
+ #boton1{
+    color: aqua;
+ }

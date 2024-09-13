@@ -1,0 +1,43 @@
+/* position se puede utilizar en cualquier elemento del body*/
+
+.padre{
+    background-color: lightblue;
+    padding-left: 20%;
+    position: relative;
+}
+.cubo {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border: 2px solid orange;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2rem;
+}
+.static{
+    position: static; /* static es el valor por defecto */
+}
+.relative{
+    background-color: green;
+    position: relative; /*permite moverse por toda la pagina tomando de referencia su posicion inicial utilizando comandos top - bottom - left - right*/
+    left: 200px ;
+    bottom: 100px ;
+}
+.absolute{
+    background-color: blueviolet;
+    position: absolute; /*toma como referencia la posicion de su primer padre que encuentre con la posicion relative*/
+    top: 20px;
+    left: 0;
+}
+.fixed{
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /*deja fijo en la pantalla al elemento en la posicion que le demos y toma como referencia al body siempre*/
+}
+.sticky {
+    position: sticky;
+    background-color: cadetblue;
+}
+/* z-index -> numero entero que indica el orden en el que van a estar superpuestos los elementos, cuanto mas grande sea el numero mas adelante va a estar*/

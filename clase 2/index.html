@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2</title>
+</head>
+<body>
+
+    <!-- SEMANTICAS  -->
+    <!-- titulares h1 al h6 - cada nro indica la importancia del titulo (no guiarse por el tamaño que muestra el browser, son modificables con css) se recomienda tener un solo h1 por archivo html -->
+     <h1>Titular</h1>
+     <h2>Sub Titulo</h2>
+     <h3>Otro titulo mas</h3>
+    <!-- Textos/parrafos -->
+    <p>
+        texto que necesito dentro de un parrafo
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolorem dicta asperiores veniam, odio omnis earum numquam sapiente unde fugiat reiciendis, rem ea inventore nulla. Eius necessitatibus veritatis minima a.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem delectus sit voluptates nihil! Minima, quas optio non, officia excepturi placeat sequi nihil inventore modi, provident atque distinctio autem unde est!
+    </p>
+    <!--  Listas organizadas y desorganizadas  -->
+    <!--  ol (organizadas - organize list)  -->
+      <ol>
+        <li>un item</li>
+        <li>un item</li>
+      </ol>
+    <!--  ul (desorganizadas - unganize list)  -->
+      <ul>
+        <li>un item</li>
+        <li>un item</li>
+      </ul>
+
+    <!-- FUNCIONALES (agregan funcionalidad) -->
+
+      <a href="https://www.google.com" target="_blank">ir a google</a> <!-- ancla o "link" , para redireccionar necesita el vinculo href"" | atributo target="_blank" indica que se abra en otra pestaña del browser-->
+      <a href="./hojasecundaria.html">ir a la hoja secundaria</a>
+    
+      <!--  <img src="./img/WhatsApp Image 2024-04-10 at 10.31.38.jpeg" alt="Contrabajo de frente"> || src="" es donde se encuentra localizada la imagen | alt="" texto alternativo orientativo principalmente orientado a la accesibilidad -->
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26272.8750873442!2d-58.51421892642974!3d-34.601395385621615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb624e47b27e5%3A0x328bd1e9dd4d0666!2sVilla%20del%20Parque!5e0!3m2!1ses-419!2sar!4v1725407883941!5m2!1ses-419!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- sirve para incrustar otra pagina html a nuestro documento -->
+
+      <iframe width="600" height="350" src="https://www.youtube.com/embed/E0525AGe81w?si=zxZ6MxSDOdDKSfpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <button>Click</button>
+    <!-- ESTRUCTURALES : <div> <span> etiquetas que permiten agrupar 'cajas genericas'  -->
+    <!-- 
+        div  -> permite definir tamaño en css
+        span -> ocupa el mejor espacio posible    
+    -->
+    <div>
+        <img src="./img/WhatsApp Image 2024-04-10 at 10.31.38.jpeg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur accusantium molestias quaerat nostrum tempora debitis minus aut vel voluptatibus asperiores, distinctio vitae consequuntur officiis exercitationem similique dolorum dolor. Nisi.</p>
+        <button>boton</button>
+    </div>
+
+    <!-- Landmarks - etiquetas de maquetacion son grandes divs que indican en su nombre el area del sitio-->
+
+    <!-- 
+    <form action="" method="">
+        <p>
+            <label for="nom">Nombre</label>
+            <input type="text" name="nombre" />
+        </p>
+        <p><input type="text" name="apellido" placeholder="apellido" />
+        </p>
+        <p>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" />
+        </p>
+    </form>
+    -->
+</body>
+</html>
+
+    <!-- 
+
+    accesibilidad / screen readers (programa que lee el html y dicta a la persona con capacidad reducida): 
+
+    atributo: informacion agregada sobre la etiqueta de apertura
+    etiqueta lang se puede agregar en cualquier etiqueta 
+    estructura gral de HTML :   !+enter   -   !+tab      - HTML:5+enter
+
+    RUTEOS:
+    ./ Documentos o carpetas que se encuentran en la misma altura que mi documento
+
+    ../ salgo de la carpeta actual en la que estoy para localizar el doc o carpeta
+
+    -->

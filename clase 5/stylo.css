@@ -1,0 +1,27 @@
+h1{
+    background-color: yellowgreen;
+    width: 25%;
+ display: inline-block;
+    /*PERMITE QUE SOLO OCUPE EL LUGAR NECESARIO, DEJANDO DISPONIBLE EL ESPACIO RESTANTE (ANCHO)*/
+}
+.tarjeta {
+    border: 2px solid black;
+    width: 200px;
+    position: relative;
+    /* display: none; - oculta al elemento sin nisiquiera dejar el lugar que ocupa*/
+}
+.img-tarjeta {
+    width: 100%;
+}
+a{
+    background-color: pink;
+    
+}
+.subtitulo{
+    background-color: lightblue;
+    width: 400px;
+    display: inline-block;
+}
+#radio{
+    display: block;
+}

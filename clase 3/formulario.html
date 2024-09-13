@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1 class="grupo1">Formulario</h1>
+    <form action="/DireccionADondeSeEnviaElFormulario"> <!-- Engloba todo el formulario | atributo action indica a donde se va a enviar el formulario -->
+
+
+        <label for="nombre">Nombre</label> <!-- informa al usuario que tiene que completar | cada label pertenece a cada input asignado -->
+        <input type="text" id="nombre"> <!-- informacion ingresada por el usuario - entrada de informacion | el atributo type indica que tipo de informacion ingresa el usuario -->
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido">
+
+        <!--  CheckBox (nos permite elegir multiples opciones) -->
+
+        <label for="">Ingrese a que curso se quiere anotar</label>
+        <div>
+            <label for="pwi"></label>
+            <input type="checkbox" id="pwi" value="progInicial" name="curso">PWI
+            <label for="pwa"></label>
+            <input type="checkbox" id="pwa" value="progAvanzada" name="curso">PWA
+        </div>
+        <!--  Radio  -->
+        <div>
+            <label for="mañana">Mañana</label>
+            <input type="radio" id="mañana" value="mañana" name="turno">
+
+            <label for="noche">Noche</label>
+            <input type="radio" id="noche" value="noche" name="turno">
+        </div>
+
+        <label for="">indique su pais</label>
+        <select name="" id="pais">
+            <option value="argentina">Argentina</option> <!--input, options
+            tienen el atributo 'value' que indica que valor tiene ese ingreso-->
+            <option value="colombia">Colombia</option>
+            <option value="peru">Peru</option>
+        </select>
+
+        <!--Dos opciones para confirmar la carga de datos-->
+        <input type="submit" value="enviar consulta">
+
+        <!--alternativa al input type submit-->
+        <!--<button> Enviar </button> -->
+
+
+    </form>
+
+    <p class="grupo1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eum, nulla hic dolorem aperiam officiis doloremque quas architecto cum. Possimus maiores est laudantium sit eius quasi natus unde at quos.
+    </p>
+
+    <h3 id="titulo2">Titulo</h3>
+
+</body>
+</html>
+
+<!-- Atributos : id - class 
+    class -> permite nombrar a varias etiquetas por el mismo nombre
+    los nombres asignados no pueden comenzar con un numero
+
+    id -> permite nombrar a una sola etiqueta, se utiliza como nombre unico
+
+    name "" -> indica donde se registra en el comportamiento del formulario / base de datos
+    
+-->
