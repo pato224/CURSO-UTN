@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.padre {
+    background-color: blue;
+    height: 80vh; 
+    display: flex; /*me pertime utilizar las propiedades de flexbox*/
+    flex-direction:row ; /*por defecto es row. permite ubicar los elementos de la forma que quisieramos (fila o columna)*/
+    /*flex-direction:column;*/
+    justify-content:center; /*alinea/indica como se ubica de manera horizontal (row) o de manera vertical (column)
+    puede ser -> center | flex-start | flex-end | space-between | space-around | space-evenly
+    */
+    align-items:center ; /* alinea | ubica a los elementos de manera vertical siempre que sea row y de manera horizontal cuando es column
+    valores son start | end | center | stretch (ocupa todo el tamaño del padre)*/
+    flex-wrap: wrap; /*si utilizo wrap no modifica el tamaño de los elementos | si utilizo no-wrap los comprime para que se ubiquen uno al lado del otro*/
+    gap: 20px; /*se utiliza para dar distancia entre todos los elementos*/
+    /*
+    justify-self
+    align-self (permite a un elemento en particular que se alinee utilizando display flex
+    */
+}
+.dos {
+    color: orange;
+    align-self: flex-start;
+}
+
+.tarjeta {
+    border: 2px solid green;
+    width: 200px;
+    /* height: fit-content; sirve para acomodar los elementos a tu tamaño necesario*/;
+    background-color: white;
+}
+.tarjeta>img{
+    width: 100%;
+}
+
+/*flexbox -> indicamos al padre como se comportan los hijos (como se ubicas)
+ubica a los hijos en forma de tiras (horizontal, vertical, filas o columnas)
+*/
